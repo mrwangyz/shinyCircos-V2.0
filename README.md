@@ -1,4 +1,4 @@
-# shinyCircos2.0：an R/Shiny application for interactive creation of Circos plot
+# shinyCircos-V2.0：an R/Shiny application for interactive creation of Circos plot
 ---
 shinyCircos-V2.0 is the latest version of shinyCircos.
 We have improved a lot of details and optimized the code. Welcome to try and give us feedback and bugs.
