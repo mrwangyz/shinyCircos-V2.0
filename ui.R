@@ -12,12 +12,13 @@ sidebar <- bs4DashSidebar(
   ),
   bs4SidebarMenu(
     id = "sidebar",
-    bs4SidebarMenuItem("shinyCircos-V2.0",tabName = "shi-cir", icon = icon("home",lib = "font-awesome"),selected = TRUE),
+    bs4SidebarMenuItem("shinyCircos-V2.0",tabName = "shi-cir", icon = icon("house",lib = "font-awesome"),selected = TRUE),
     br(),
     bs4SidebarMenuItem("Data Upload",tabName = "dat-upl", icon = icon("upload",lib = "font-awesome")),
-    bs4SidebarMenuItem("Circos Parameters",tabName = "dat-vie", icon = icon("cogs",lib = "font-awesome")),
+    bs4SidebarMenuItem("Circos Parameters",tabName = "dat-vie", icon = icon("gears",lib = "font-awesome")),
     bs4SidebarMenuItem("Circos Plot",tabName = "cir-par", icon = icon("image",lib = "font-awesome")),
-    bs4SidebarMenuItem("Gallery",tabName = "gal", icon = icon("adjust",lib = "font-awesome")),
+    #bs4SidebarMenuItem("Gallery",tabName = "gal", icon = icon("adjust",lib = "font-awesome")),
+    bs4SidebarMenuItem("Gallery",tabName = "gal", icon = icon("circle-half-stroke",lib = "font-awesome")),
     bs4SidebarMenuItem("Help",tabName = "help", icon = icon("question",lib = "font-awesome")),
     bs4SidebarMenuItem("About",tabName = "about", icon = icon("info",lib = "font-awesome")),
     bs4SidebarMenuItem("Contact",tabName = "contact", icon = icon("compass"))
@@ -31,45 +32,6 @@ body <- bs4DashBody(
        tabName = "shi-cir",
        h1(" Welcome to shinyCircos, hope you can enjoy using it!"),
        br(),
-       # fluidRow(
-       #   column(
-       #     width = 4,
-       #     bs4InfoBox(
-       #       width = 12,
-       #       title = "Current version",
-       #       value = "2.0.0",
-       #       icon = ionicon(name = "cog"),
-       #       color = "info",
-       #       gradient = TRUE,
-       #       fill = TRUE
-       #     )
-       #   ),
-       #   column(
-       #     width = 4,
-       #     bs4InfoBox(
-       #       width = 12,
-       #       title = "Online time of the current version",
-       #       value = "2022/7/20",
-       #       icon = ionicon(name = "time"),
-       #       color = "teal",
-       #       gradient = TRUE,
-       #       fill = TRUE,
-       #     )
-       #   ),
-       #   column(
-       #     width = 4,
-       #     bs4InfoBox(
-       #       width = 12,
-       #       title = "Contact",
-       #       value = "Your opinion is very important!",
-       #       icon = icon("envelope"),
-       #       color = "lightblue",
-       #       gradient = TRUE,
-       #       fill = TRUE,
-       #       tabName = "contact"
-       #     )
-       #   )
-       # ),
        shiny::includeHTML("www/main.html")
      ),
      bs4TabItem(
@@ -164,7 +126,7 @@ body <- bs4DashBody(
                        label = "Save data",
                        style = "unite",
                        color = "success",
-                       icon = icon("save")
+                       icon = icon("floppy-disk",lib = "font-awesome")
                      ),
                      title = "After clicking save data, you can continue to upload data",
                      placement = "top"
@@ -351,7 +313,7 @@ body <- bs4DashBody(
                          label = NULL,
                          style = "unite",
                          color = "success",
-                         icon = icon("cog")
+                         icon = icon("gears",lib = "font-awesome")
                        ),
                        title = "Chromosome parameter settings",
                        placement = "bottom"
@@ -641,7 +603,7 @@ body <- bs4DashBody(
                        label = "Advance",
                        style = "unite",
                        color = "success",
-                       icon = icon("cog")
+                       icon = icon("gears",lib = "font-awesome")
                      ),
                      title = "Legend settings",
                      placement = "bottom"
