@@ -1,10 +1,11 @@
-# shinyCircos2.0：an R/Shiny application for interactive creation of Circos plot
+# shinyCircos-V2.0：an R/Shiny application for interactive creation of Circos plot
 ---
 shinyCircos-V2.0 is the latest version of shinyCircos.
 We have improved a lot of details and optimized the code. Welcome to try and give us feedback and bugs.
 
-<font color=blue>URL of shinyCircos-V2.0:https://venyao.xyz/shinyCircos-V2.0/</font>
-<font color=red>At present, shinyCircos-V2.0 is still a beta version, if you encounter problems during use, please use the old version or contact us.</font>
+URL of shinyCircos-V2.0:https://venyao.xyz/shinyCircos-V2.0/.
+
+At present, shinyCircos-V2.0 is still a beta version, if you encounter problems during use, please use the old version or contact us.
 
 Welcome to the telegram group:https://t.me/+NadFeZazBBc2Y2U1
 
@@ -34,7 +35,10 @@ BiocManager::install("ComplexHeatmap")
 ```
 
 third step：
-
+Run the code to start shinyCircos-V2.0, then you can see the page in the default browser
+```R
+runApp("D:/apps/shinyCircos-V2.0/",launch.browser = TRUE)
+```
 
 
 
